@@ -7,7 +7,7 @@ END;
 
 -- 모든 시퀀스 삭제
 BEGIN
-    FOR rec IN (SELECT sequence_name FROM user_sequences WHERE sequence_name LIKE 'O_%') LOOP
+    FOR rec IN (SELECT sequence_name FROM user_sequences WHERE sequence_name LIKE 'A_%' OR sequence_name LIKE 'O_%') LOOP
         EXECUTE IMMEDIATE 'DROP SEQUENCE ' || rec.sequence_name;
     END LOOP;
 END;
