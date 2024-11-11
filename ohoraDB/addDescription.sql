@@ -28,4 +28,12 @@ WHERE PDT_ID = 174;
 UPDATE O_PRODUCT SET PDT_DESCRIPTION = '안전하고 깔끔한 손·발톱 관리'
 WHERE PDT_ID = 175;
 
+UPDATE o_product
+SET pdt_count = 50
+WHERE pdt_id BETWEEN 1 AND 182;
+--
+UPDATE o_pdtoption
+SET opt_count = 50
+WHERE opt_id BETWEEN 1 AND 28;
+
 COMMIT;
