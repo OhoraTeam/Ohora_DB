@@ -2,6 +2,10 @@
 -- ctrl + A 
 -- ctrl + Enter
 
+--리뷰댓글
+CREATE SEQUENCE  O_COMMENT_SEQ
+START WITH 10
+NOCACHE;
 --회원번호 시퀀스
 CREATE SEQUENCE SCOTT.O_USER_SEQ
 NOCACHE;
