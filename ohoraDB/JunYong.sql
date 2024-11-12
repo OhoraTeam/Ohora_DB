@@ -1,4 +1,7 @@
 
+--리뷰 수 5 업뎃 ( 1번 상품)
+update o_product SET pdt_review_count = 5 WHere pdt_id = 1;
+
 
 --회원 추가사항 (o_user)
 
