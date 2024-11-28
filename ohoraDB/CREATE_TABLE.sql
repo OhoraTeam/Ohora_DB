@@ -1351,4 +1351,12 @@ MODIFY pdt_img_url VARCHAR2(100 CHAR);
 ALTER TABLE o_product
 MODIFY pdt_img_url2 VARCHAR2(100 CHAR);
 
+update o_auth
+set auth_name = 'ROLE_ADMIN'
+where auth_id = 1;
+--
+update o_auth
+set auth_name = 'ROLE_USER'
+where auth_id = 2;
+
 commit;
