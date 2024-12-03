@@ -1,4 +1,21 @@
 
+
+
+-- 리뷰 시퀀스
+CREATE SEQUENCE o_review_seq
+START WITH 30
+INCREMENT BY 1
+NOCACHE
+NOCYCLE;  
+
+-- 리뷰 사진 시퀀스
+CREATE SEQUENCE o_revurl_seq
+START WITH 30
+INCREMENT BY 1
+NOCACHE
+NOCYCLE;  
+
+
 --리뷰 수 5 업뎃 ( 1번 상품)
 update o_product SET pdt_review_count = 5 WHere pdt_id = 1;
 
