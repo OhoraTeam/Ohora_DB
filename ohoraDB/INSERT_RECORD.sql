@@ -940,3 +940,11 @@ SET pdt_img_url = pdt_id
 WHERE pdt_id BETWEEN 169 AND 175;
 
 COMMIT;
+
+update o_auth
+set auth_name = 'ROLE_ADMIN'
+where auth_id = 1;
+--
+update o_auth
+set auth_name = 'ROLE_USER'
+where auth_id = 2;
