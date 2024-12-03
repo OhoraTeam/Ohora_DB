@@ -1358,5 +1358,9 @@ where auth_id = 1;
 update o_auth
 set auth_name = 'ROLE_USER'
 where auth_id = 2;
-
+--
+UPDATE o_pdtoption
+SET pdt_id = NULL
+WHERE opt_id BETWEEN 1 AND 28;
+--
 commit;
